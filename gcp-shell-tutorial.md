@@ -76,5 +76,5 @@ cd cloudshell_open/bitcoin-in-action-playground
 ```
 
 ```sh
-ngrok start blockchain-explorer_50001 hansel_18443
+ngrok start blockchain-explorer_50001 hansel_18443 hansel_18444
 ```
