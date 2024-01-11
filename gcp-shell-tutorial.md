@@ -69,10 +69,11 @@ bitcoin-cli createwallet "il_mio_primo_wallet"
 bitcoin-cli generatetoaddress 1 $(bitcoin-cli getnewaddress)
 ```
 
-## Publish ports of Cloud Shell
+## Connettere altri nodi Bitcoin
 
-<walkthrough-open-cloud-shell-button></walkthrough-open-cloud-shell-button> to
-open a new shell leaving docker-compose running
+### Rendere raggiungibile il tuo nodo "hansel"
+
+<walkthrough-open-cloud-shell-button></walkthrough-open-cloud-shell-button>
 
 ```sh
 cd cloudshell_open/bitcoin-in-action-playground
@@ -83,5 +84,25 @@ cd cloudshell_open/bitcoin-in-action-playground
 ```
 
 ```sh
-ngrok start blockchain-explorer_50001 hansel_18443 hansel_18444
+ngrok start hansel_18444
+```
+
+### Aggiungere altri nodi
+
+<walkthrough-open-cloud-shell-button></walkthrough-open-cloud-shell-button>
+
+```sh
+cd cloudshell_open/bitcoin-in-action-playground
+```
+
+```sh
+docker exec -ti hansel bash
+```
+
+```sh
+bitcoin-cli addnode <DOMINIO:PORTA DEL NODO BITCOIN DA AGGIUNGERE> add
+```
+
+```sh
+bitcoin-cli getaddednodeinfo
 ```
