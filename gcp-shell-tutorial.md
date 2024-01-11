@@ -1,5 +1,7 @@
 # Bitcoin in Action playground!!!
 
+## Benvenuto!!!
+
 Avviando questo tutorial verrai guidato nei primi passi che ti consentiranno di
 - accendere nodi Bitcoin
 - collegare il tuo portafoglio
