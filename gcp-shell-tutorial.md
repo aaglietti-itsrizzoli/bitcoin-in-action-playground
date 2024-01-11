@@ -31,7 +31,7 @@ docker-compose up
 
 Attendere messaggio come descritto al seguente indirizzo
 
-![waiting-for-bitcoind-sync-to-finish](https://github.com/aaglietti-itsrizzoli/bitcoin-in-action-playground/docs/images/waiting-for-bitcoind-sync-to-finish.png "waiting-for-bitcoind-sync-to-finish")
+![waiting-for-bitcoind-sync-to-finish](https://raw.githubusercontent.com/aaglietti-itsrizzoli/bitcoin-in-action-playground/master/docs/images/waiting-for-bitcoind-sync-to-finish.png "waiting-for-bitcoind-sync-to-finish")
 
 
 ### Bitcoin blockchain explorer
