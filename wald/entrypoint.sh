@@ -61,13 +61,13 @@ fi
 
 # libbitcoin explorer
 # https://github.com/libbitcoin/libbitcoin-explorer/wiki
-if ! command -v bx &> /dev/null
-then
-    cd /opt/wald/utility
-    wget https://github.com/libbitcoin/libbitcoin-explorer/releases/download/v3.2.0/bx-linux-x64-qrcode
-    mv bx-linux-x64-qrcode bx
-    chmod +x bx
-fi
+# if ! command -v bx &> /dev/null
+# then
+#     cd /opt/wald/utility
+#     wget https://github.com/libbitcoin/libbitcoin-explorer/releases/download/v3.2.0/bx-linux-x64-qrcode
+#     mv bx-linux-x64-qrcode bx
+#     chmod +x bx
+# fi
 
 cd
 
