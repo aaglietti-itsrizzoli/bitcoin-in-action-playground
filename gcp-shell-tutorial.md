@@ -60,11 +60,15 @@ bitcoin-cli createwallet "il_mio_primo_wallet"
 bitcoin-cli generatetoaddress 1 $(bitcoin-cli getnewaddress)
 ```
 
-### Connect your Electrum
+## Publish ports of Cloud Shell
 
-Using the ngrok domain and port to connect your Electrum wallet
+To be able to connect with ***unauthenticated*** not HTTP only we need something better of web
+preview :)
 
-```terminal
---regtest --oneserver --server {ngrok domain 500001}:{ngrok 50001 port}:t
+```sh
+./gcp-shell-install-ngrok.sh
 ```
 
+```sh
+ngrok start blockchain-explorer_50001 hansel_18443
+```
