@@ -64,8 +64,12 @@ bitcoin-cli generatetoaddress 1 $(bitcoin-cli getnewaddress)
 
 ## Publish ports of Cloud Shell
 
-To be able to connect with ***unauthenticated*** not HTTP only we need something better of web
-preview :)
+<walkthrough-open-cloud-shell-button></walkthrough-open-cloud-shell-button> to
+open a new shell leaving docker-compose running
+
+```sh
+cd cloudshell_open/bitcoin-in-action-playground
+```
 
 ```sh
 ./gcp-shell-install-ngrok.sh
