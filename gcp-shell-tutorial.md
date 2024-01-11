@@ -3,13 +3,7 @@
 Avviando questo tutorial verrai guidato nei primi passi che ti consentiranno di
 - accendere nodi Bitcoin
 - collegare il tuo portafoglio
-- rivere dei 5000 bitcoin
-
-## Next steps
-
-1. Scaricare Bitcoin Core
-2. Playground bootstrap
-3. Connettere Electrum al playground tramite ngrok
+- piovono bitcoin!!!
 
 ## Install Bitcoin Core
 
@@ -35,7 +29,8 @@ docker-compose up
 
 Attendere messaggio come descritto al seguente indirizzo
 
-https://playground.bitcoininaction.com/playground-bootstrap#fuoco-alle-polveri
+![waiting-for-bitcoind-sync-to-finish](https://github.com/aaglietti-itsrizzoli/bitcoin-in-action-playground/docs/images/waiting-for-bitcoind-sync-to-finish.png "waiting-for-bitcoind-sync-to-finish")
+
 
 ### Bitcoin blockchain explorer
 
