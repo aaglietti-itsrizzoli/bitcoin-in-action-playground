@@ -48,19 +48,16 @@ open a new shell leaving docker-compose running
 cd cloudshell_open/bitcoin-in-action-playground
 ```
 
-and follow
-https://playground.bitcoininaction.com/minare-il-primo-blocco-bitcoin
-
-## Publish ports of Cloud Shell
-
-To be able to connect with ***unauthenticated*** not HTTP only we need something better of web
-preview :)
-
 ```sh
-./gcp-shell-install-ngrok.sh
+docker exec -ti hansel bash
 ```
+
 ```sh
-ngrok start blockchain-explorer_50001 lightningd_9735 lnd_19735
+bitcoin-cli createwallet "il_mio_primo_wallet"
+```
+
+```sh
+bitcoin-cli generatetoaddress 1 $(bitcoin-cli getnewaddress)
 ```
 
 ### Connect your Electrum
