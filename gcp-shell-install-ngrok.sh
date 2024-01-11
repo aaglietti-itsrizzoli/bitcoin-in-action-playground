@@ -10,4 +10,4 @@ echo "https://dashboard.ngrok.com/get-started/your-authtoken ... ngrok auth toke
 read line
 sed -i "s/NGROK_AUTH_TOKEN/$line/g" $HOME/.ngrok2/ngrok.yml
 
-ngrok 
+echo "READY TO USE NGROK!!!"
