@@ -3,11 +3,12 @@
 ## Benvenuto!!!
 
 Avviando questo tutorial verrai guidato nei primi passi che ti consentiranno di
-- accendere nodi Bitcoin
-- collegare il tuo portafoglio
-- piovono bitcoin!!!
+- Scaricare ed installare la versione 0.21 di Bitcoin Core
+- Accendere due nodi Bitcoin e un blockchain explorer
+- Piovono bitcoinsss!!!
+- Connettere altri nodi Bitcoin
 
-## Install Bitcoin Core
+## Scaricare ed installare la versione 0.21 di Bitcoin Core
 
 Esegui il seguente snippet per scaricare Bitcoin Core 0.21
 
@@ -19,7 +20,7 @@ rm -Rf bitcoin-0.21.0 && \
 rm -Rf bitcoin-0.21.0-x86_64-linux-gnu.tar.gz
 ```
 
-## Playground bootstrap
+## Accendere due nodi Bitcoin e un blockchain explorer
 
 ```sh
 docker-compose pull
@@ -33,15 +34,21 @@ Attendere messaggio come descritto al seguente indirizzo
 
 ![waiting-for-bitcoind-sync-to-finish](https://raw.githubusercontent.com/aaglietti-itsrizzoli/bitcoin-in-action-playground/master/docs/images/waiting-for-bitcoind-sync-to-finish.png "waiting-for-bitcoind-sync-to-finish")
 
-
-### Bitcoin blockchain explorer
+### Block explorer
 
 Click <walkthrough-web-preview-icon></walkthrough-web-preview-icon> and change
 the preview port to 8094.
 
-If everything is fine you'll see something.
+### Bitcoin full node API
+Click <walkthrough-web-preview-icon></walkthrough-web-preview-icon> and change
+the preview port to 18443.
 
-### Mining
+*You'll got a 404*
+
+- Change the last part of URL with `/rest/chaininfo.json` to see the blockchain state.
+- Change the last part of URL with `/rest/mempool/info.json` to see the mempool state.
+
+## Piovono bitcoinsss!!!
 
 <walkthrough-open-cloud-shell-button></walkthrough-open-cloud-shell-button> to
 open a new shell leaving docker-compose running
