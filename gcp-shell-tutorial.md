@@ -141,7 +141,7 @@ bitcoin-cli getmempoolinfo
 bitcoin-cli getrawmempool
 ```
 
-also from `/rest/mempool/info.json`
+also from `/rest/mempool/contents.json`
 
 mine one extra block to confirm the transaction that is in the mempool
 
