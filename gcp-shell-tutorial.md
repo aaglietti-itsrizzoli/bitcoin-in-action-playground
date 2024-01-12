@@ -69,6 +69,12 @@ bitcoin-cli createwallet "il_mio_primo_wallet"
 bitcoin-cli generatetoaddress 1 $(bitcoin-cli getnewaddress)
 ```
 
+Verificare i fondi
+
+```sh
+bitcoin-cli getwalletinfo
+```
+
 ## Connettere altri nodi Bitcoin
 
 ### Rendere raggiungibile il tuo nodo "hansel"
@@ -105,4 +111,40 @@ bitcoin-cli addnode <DOMINIO:PORTA DEL NODO BITCOIN DA AGGIUNGERE> add
 
 ```sh
 bitcoin-cli getaddednodeinfo
+```
+
+Generare un nuovo indirizzo e condividerlo in chat!
+
+```sh
+bitcoin-cli getnewaddress
+```
+
+### Minare 100 blocchi
+
+Altrimenti i fondi non sono maturi perche' provenienti tutti da coinbase
+
+```sh
+bitcoin-cli generatetoaddress 100 $(bitcoin-cli getnewaddress)
+```
+
+```sh
+bitcoin-cli sendtoaddress <INDIRIZZO DEL DESTINATARIO> 5
+```
+
+We can verify the mempool is working
+
+```sh
+bitcoin-cli getmempoolinfo
+```
+
+```sh
+bitcoin-cli getrawmempool
+```
+
+also from `/rest/mempool/info.json`
+
+mine one extra block to confirm the transaction that is in the mempool
+
+```sh
+bitcoin-cli generatetoaddress 1 $(bitcoin-cli getnewaddress)
 ```
