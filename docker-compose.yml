@@ -143,7 +143,7 @@ services:
     user: "1000:1000"
     restart: on-failure
     stop_grace_period: 1m
-    command: "./wait-for db:3306 --timeout=720 -- nginx -g 'daemon off;'"
+    command: "./wait-for mempool-db:3306 --timeout=720 -- nginx -g 'daemon off;'"
     ports:
       - 18080:8080
     links:
@@ -165,7 +165,7 @@ services:
     user: "1000:1000"
     restart: on-failure
     stop_grace_period: 1m
-    command: "./wait-for-it.sh db:3306 --timeout=720 --strict -- ./start.sh"
+    command: "./wait-for-it.sh mempool-db:3306 --timeout=720 --strict -- ./start.sh"
     volumes:
       - ./mempool.space/data:/backend/cache
     links:
