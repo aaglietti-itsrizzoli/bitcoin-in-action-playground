@@ -148,6 +148,7 @@ services:
       - 18080:8080
     links:
       - mempool-api
+      - mempool-db
   mempool-api:
     environment:
       MEMPOOL_BACKEND: "none"
