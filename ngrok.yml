@@ -1,3 +1,4 @@
+version: 2
 authtoken: NGROK_AUTH_TOKEN
 region: eu
 tunnels:

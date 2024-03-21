@@ -1,8 +1,7 @@
 !#/bin/bash
 set -e
-wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
-unzip ngrok-stable-linux-amd64.zip
-sudo mv ngrok /usr/sbin/ngrok
+wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
+sudo tar -xzvf ngrok-v3-stable-linux-amd64.tgz -C /usr/sbin
 chmod o+x /usr/sbin/ngrok
 mkdir -p $HOME/.ngrok2 
 cp ngrok.yml $HOME/.ngrok2/ngrok.yml
