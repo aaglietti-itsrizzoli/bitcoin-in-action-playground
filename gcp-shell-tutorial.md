@@ -20,6 +20,11 @@ rm -Rf bitcoin-0.21.0 && \
 rm -Rf bitcoin-0.21.0-x86_64-linux-gnu.tar.gz
 ```
 
+## Cambiare permessi della cartella utilizzata da MySQL
+```sh
+chmod -R 777 mempool.space/mysql/
+```
+
 ## Accendere due nodi Bitcoin e un blockchain explorer
 
 ```sh
