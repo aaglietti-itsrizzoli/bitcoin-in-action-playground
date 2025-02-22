@@ -48,7 +48,7 @@ services:
     entrypoint: ["/opt/emerald-city/entrypoint.sh"]
     working_dir: /opt/emerald-city
     links:
-      - bitcoinjs-regtest-server
+   #  - bitcoinjs-regtest-server
       - gretel
   blockchain-explorer:
     container_name: blockchain-explorer
@@ -66,19 +66,19 @@ services:
     command: ['/srv/explorer/run.sh', 'bitcoin-regtest', 'explorer']
     links:
       - gretel
-  bitcoinjs-regtest-server:
-    container_name: bitcoinjs-regtest-server
-    hostname: bitcoinjs-regtest-server
-    image: junderw/bitcoinjs-regtest-server
+#  bitcoinjs-regtest-server:
+#    container_name: bitcoinjs-regtest-server
+ #   hostname: bitcoinjs-regtest-server
+ #   image: junderw/bitcoinjs-regtest-server
     # uncomment if you want to connect
     # bitcoinjs-lib from outside
   # ports:
   #  - 8888:8080
-    links:
-      - hansel
-    volumes:
-      - ./bitcoinjs-regtest-server/bitcoin-data:/root/.bitcoin
-      - ./bitcoinjs-regtest-server/run_bitcoind_service.sh:/root/run_bitcoind_service.sh patch to disable mining of 432 blocks...
+  #  links:
+   #   - hansel
+   # volumes:
+   #   - ./bitcoinjs-regtest-server/bitcoin-data:/root/.bitcoin
+   #   - ./bitcoinjs-regtest-server/run_bitcoind_service.sh:/root/run_bitcoind_service.sh patch to disable mining of 432 blocks...
   # blockchain-reader:
   #   container_name: blockchain-reader
   #   hostname: blockchain-reader
